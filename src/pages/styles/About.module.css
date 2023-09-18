@@ -1,0 +1,25 @@
+.about {
+  background-color: var(--main-bg);
+  height: 100vh;
+}
+
+.about section img {
+  width: 450px;
+}
+
+.about .wrapper {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.about .wrapper h2 {
+  font-size: 3rem;
+  margin: 1.5rem 0;
+  color: var(--main-color);
+}
+.about .wrapper p {
+  font-size: 1.7rem;
+  width: 80rem;
+}

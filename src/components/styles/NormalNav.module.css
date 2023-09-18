@@ -1,0 +1,31 @@
+.nav ul {
+  list-style: none;
+  gap: 60px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  margin-right: 50px;
+}
+
+/* .link {
+  font-size: 16px;
+  color: #a4a1f2;
+  text-decoration: none;
+  text-transform: uppercase;
+} */
+
+.nav div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  color: white;
+}
+
+.nav :global(.active) {
+  border-bottom: 2px solid #fff;
+}

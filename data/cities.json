@@ -1,0 +1,112 @@
+{
+  "cities": [
+    {
+      "cityName": "Lisbon",
+      "country": "Portugal",
+      "emoji": "🇵🇹",
+      "date": "2027-10-31T15:59:59.138Z",
+      "notes": "My favorite city so far!",
+      "position": {
+        "lat": 38.727881642324164,
+        "lng": -9.140900099907554
+      },
+      "id": 73930385
+    },
+    {
+      "cityName": "Gerstungen",
+      "country": "Germany",
+      "emoji": "🇩🇪",
+      "date": "2023-07-30T17:08:38.858Z",
+      "notes": "",
+      "position": {
+        "lat": 50.90303283111257,
+        "lng": 10.236455821290185
+      },
+      "id": 651335142
+    },
+    {
+      "cityName": "Santarem",
+      "country": "Portugal",
+      "emoji": "🇵🇹",
+      "date": "2023-07-30T21:25:16.259Z",
+      "notes": "",
+      "position": {
+        "lat": 39.39375459224348,
+        "lng": -8.856709060342146
+      },
+      "id": 651335145
+    },
+    {
+      "cityName": "Puebla de Don Rodrigo",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2023-07-31T11:30:57.407Z",
+      "notes": "",
+      "position": {
+        "lat": 39.07890809706475,
+        "lng": -4.83436773200632
+      },
+      "id": 651335146
+    },
+    {
+      "cityName": "Cortino",
+      "country": "Italy",
+      "emoji": "🇮🇹",
+      "date": "2023-07-31T11:30:57.407Z",
+      "notes": "",
+      "position": {
+        "lat": 42.61779143282346,
+        "lng": 13.554996047269372
+      },
+      "id": 651335147
+    },
+    {
+      "cityName": "Culciu Mare",
+      "country": "Romania",
+      "emoji": "🇷🇴",
+      "date": "2023-07-31T11:30:57.407Z",
+      "notes": "",
+      "position": {
+        "lat": 47.73932336136857,
+        "lng": 23.13323405863906
+      },
+      "id": 651335149
+    },
+    {
+      "cityName": "Le Latet",
+      "country": "France",
+      "emoji": "🇫🇷",
+      "date": "2023-07-31T19:44:25.334Z",
+      "notes": "Hello World\n",
+      "position": {
+        "lat": 46.800059446787316,
+        "lng": 5.953147027380742
+      },
+      "id": 651335150
+    },
+    {
+      "cityName": "Bielefeld",
+      "country": "Germany",
+      "emoji": "🇩🇪",
+      "date": "2023-07-31T19:44:25.334Z",
+      "notes": "This Motherfucking city was beauttiful ",
+      "position": {
+        "lat": 52.02545860348814,
+        "lng": 8.63296073433948
+      },
+      "id": 651335151
+    },
+    {
+      "cityName": "Fontenay-sous-Bois",
+      "country": "France",
+      "emoji": "🇫🇷",
+      "date": "2023-08-01T16:14:10.056Z",
+      "notes": "We are here in Paris",
+      "position": {
+        "lat": 48.857487002645485,
+        "lng": 2.4827324180016013
+      },
+      "id": 651335152
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+.login {
+  background-color: var(--main-bg);
+  height: 100vh;
+}
+
+.login section {
+  height: 80%;
+}
+
+.login section h1 {
+  font-size: 3.8rem;
+  text-align: center;
+}
+
+.login p {
+  color: var(--second-color);
+  text-align: center;
+  font-size: 1.6rem;
+  margin-top: -0.8rem;
+}
+
+.login form {
+  margin-top: 5rem;
+}
+
+.login form div {
+  display: flex;
+  justify-content: center;
+}
+
+.login input {
+  width: 35%;
+  border-radius: 30px;
+  padding: 2rem 2.4rem;
+  font-size: 2rem;
+  margin: 10px 0;
+  color: var(--second-color);
+  background-color: var(--input-bg);
+}
+
+.login form div:last-child {
+  margin-top: 1.7rem;
+}

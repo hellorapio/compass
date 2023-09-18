@@ -1,0 +1,35 @@
+.tours {
+  background-color: var(--main-bg);
+  height: 100vh;
+}
+
+.main {
+  margin-top: 5rem;
+}
+
+.main h2 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.imgs {
+  margin: 1.5rem 0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+
+.imgs img {
+  border-radius: 1rem;
+  height: 40rem;
+}
+
+.tours span {
+  font-size: 5.5rem;
+  color: #edf1d6;
+}
+
+.flex {
+  display: flex;
+  justify-content: flex-end;
+}

@@ -1,0 +1,9 @@
+.sidebar {
+  flex-basis: 60rem;
+  padding: 3rem 3.5rem;
+  background-color: var(--main-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}

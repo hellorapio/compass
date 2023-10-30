@@ -1,6 +1,6 @@
 import { FC } from "react";
 import styles from "./styles/User.module.css";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useFakeAuth } from "../hooks/useFakeAuth";
 const User: FC = () => {
   const { user, logout } = useFakeAuth();

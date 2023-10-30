@@ -11,7 +11,7 @@ const initialState: {
 };
 
 function reducer(
-  state: typeof initialState,
+  _: typeof initialState,
   action: ReducerActionAuth
 ): typeof initialState {
   switch (action.type) {

@@ -16,7 +16,7 @@ export function convertToEmoji(countryCode: string) {
   const codePoints = countryCode
     .toUpperCase()
     .split("")
-    .map((char) => 127397 + char.charCodeAt());
+    .map((char) => 127397 + char.charCodeAt(0));
   return String.fromCodePoint(...codePoints);
 }
 
@@ -76,10 +76,15 @@ function Form() {
       try {
         dispatch({ type: "start" });
         const res = await fetch(
-          `${BASE_API}latitude=${lat}&longitude=${lng}`
+          `${BASE_API}latitude=${lat || ""}&longitude=${lng || ""}`
         );
 
-        const data = await res.json();
+        const data = (await res.json()) as typeof initialState & {
+          countryName: string;
+          city: string;
+          locality: string;
+          countryCode: string;
+        };
 
         if (data.countryName === "")
           throw new Error(
@@ -89,10 +94,9 @@ function Form() {
         dispatch({
           type: "data",
           payload: {
-            cityName:
-              (data.city as string) || (data.locality as string) || "",
+            cityName: data.city || data.locality || "",
             emoji: convertToEmoji(data.countryCode),
-            country: data.countryName as string,
+            country: data.countryName,
           },
         });
       } catch (error) {
@@ -180,6 +184,7 @@ function Form() {
         >
           &larr; Back
         </Button>
+        {/* eslint-disable-next-line @typescript-eslint/no-misused-promises */}
         <Button type="primary" onClick={handleSubmit}>
           Add
         </Button>

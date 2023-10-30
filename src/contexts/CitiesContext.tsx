@@ -146,13 +146,13 @@ export const CitiesProvider: FC<{ children: React.ReactNode }> = ({
     }
   }
 
-  async function deleteCity(id: string) {
+  async function deleteCity(id: string | number) {
     dispatch({ type: "loading" });
     try {
-      const req = await fetch(`${BASE}cities/${id}`, {
+      await fetch(`${BASE}cities/${id}`, {
         method: "DELETE",
       });
-      dispatch({ type: "cities/deleted", payload: id });
+      dispatch({ type: "cities/deleted", payload: `${id}` });
     } catch (err) {
       dispatch({
         type: "rejected",

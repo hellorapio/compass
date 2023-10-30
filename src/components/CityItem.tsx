@@ -23,11 +23,6 @@ const CityItem: FC<CityItemProp> = ({ city }) => {
 
   const { currentCity, deleteCity } = useCities();
 
-  function handleClick(e: MouseEvent) {
-    e.preventDefault();
-    deleteCity(id ? id : "").catch((err) => console.log(err));
-  }
-
   return (
     <li>
       <Link
@@ -41,7 +36,10 @@ const CityItem: FC<CityItemProp> = ({ city }) => {
         <time className={styles.date}>{formatDate(date)}</time>
         <button
           className={styles.deleteBtn}
-          onClick={(e) => handleClick(e)}
+          onClick={(e) => {
+            e.preventDefault();
+            deleteCity(id ? id : "").catch((err) => console.log(err));
+          }}
         >
           &times;
         </button>

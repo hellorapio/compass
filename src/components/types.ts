@@ -23,7 +23,7 @@ export type CountryItemProp = {
 };
 
 export type ButtonProps = {
-  onClick?: (e: Event) => void;
+  onClick?: (e: any) => void;
   type: "position" | "back" | "primary";
   children: React.ReactNode;
 };
@@ -35,7 +35,7 @@ export type CitiesContext = {
   currentCity: City;
   getCity: (id: string) => Promise<void>;
   addCity: (newCity: City) => Promise<void>;
-  deleteCity: (id: string) => Promise<void>;
+  deleteCity: (id: string | number) => Promise<void>;
 };
 
 export type FormReducerAction =
